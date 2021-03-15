@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../../logo.png'/>
+  <script type='text/javascript' src='../../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>canteenmanagement\src\main\java\com\hexaware\MLP312\model\Menu.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.hexaware.MLP312.model;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.util.Objects;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * Menu class used to display menu information.
+ * @author hexware
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>8</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class Menu {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * foodId to store foodId.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>12</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 12 Writes: 11'>foodId</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * foodName to store foodName.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>16</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance uncovered' title='Reads: 0 Writes: 0'>foodName</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+   * Default Constructor.
+   */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>20</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l20s0'>  public Menu() {</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>22</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l22s0'>  }</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * @param argFoodId to initialize food id.
+ * used to get details through constructor.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>27</td><td class='count'>10</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l27s0'>  public Menu(final int argFoodId) {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testListAllSome: 75, 76, 93, 95</li>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 37, 38, 41, 44, 45, 47</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>28</td><td class='count'>10</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l28s0'>    this.foodId = argFoodId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testListAllSome: 75, 76, 93, 95</li>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 37, 38, 41, 44, 45, 47</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td class='count'>10</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l29s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testListAllSome: 75, 76, 93, 95</li>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 37, 38, 41, 44, 45, 47</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>30</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>31</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public final boolean equals(final Object obj) {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>4</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#40bf00' onclick='hidePath()'>Path coverage: 3/4</span>
+        <span class='covered' onclick="showPath(this,'l32s0 l33s0')">A: 2</span>
+        <span class='uncovered' onclick="showPath(this,'l32s0 l35s0 l36s0')">B: 0</span>
+        <span class='covered' onclick="showPath(this,'l32s0 l35s0 l38s0 l39s0 l40s0')">C: 1</span>
+        <span class='covered' onclick="showPath(this,'l32s0 l35s0 l38s0 l39s0 l42s0')">D: 1</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>32</td><td class='count'>4</td>
+      <td><pre class='prettyprint jmp'>    <span id='l32s0' title='Executions: 4' class='covered cp' onclick='showHide(this,0)'>if (obj == null)</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 39, 40, 44, 47</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>33</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l33s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 39, 40</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>34</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>35</td><td class='count'>2</td>
+      <td><pre class='prettyprint jmp'>    <span id='l35s0' title='Executions: 2' class='covered cp' onclick='showHide(this,0)'>if (getClass() != obj.getClass())</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 44, 47</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>36</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l36s0'>      return false;</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>37</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>38</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l38s0'>    Menu menu = (Menu) obj;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 44, 47</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>39</td><td class='count'>2</td>
+      <td><pre class='prettyprint jmp'>    <span id='l39s0' title='Executions: 2' class='covered cp' onclick='showHide(this,0)'>if (Objects.equals(foodId, menu.foodId))</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 44, 47</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>40</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l40s0'>      return true;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 47</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>41</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>42</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l42s0'>    return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 44</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>43</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>44</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>45</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public final int hashCode() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>46</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l46s0'>    return Objects.hash(foodId);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 45, 46</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>47</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this food ID.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>51</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getFoodId() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>52</td><td class='count'>6</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l52s0'>    return foodId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testListAllSome: 93, 94, 95, 96</li>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 41, 42</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>53</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @param argFoodId gets the food id.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>57</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setFoodId(final int argFoodId) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>58</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l58s0'>    this.foodId = argFoodId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 43</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>59</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l59s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP312.model.MenuTest#testMenu: 43</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+     * @return this food Name.
+     */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>63</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getFoodName() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>64</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l64s0'>    return foodName;</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>65</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argFoodName gets the food Name.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>69</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setFoodName(final int argFoodName) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>70</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l70s0'>    this.foodName = argFoodName;</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>71</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l71s0'>  }</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>72</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>
